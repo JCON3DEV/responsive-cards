@@ -91,6 +91,7 @@ a {
   /*z-index: 10001;*/ /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
 }
+/* adjustment added due to inconsistency with spacing */
 #overlay-3 {
   top:-80%;
 }
