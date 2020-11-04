@@ -83,7 +83,7 @@ a {
   width: 100%; /*Full width (cover the whole page) */
   height: 100%; /* Full height (cover the whole page) */
   top: -90%;
-  left: -1%;
+  left: -2%;
   /* right: -3%; */
   bottom: 0;
   background-color: rgb(251, 249, 248);
@@ -91,15 +91,16 @@ a {
   /*z-index: 10001;*/ /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
 }
+#overlay-3 {
+  top:-80%;
+}
+
 
 #text, #text-2, #text-3 {
   position: absolute;
-  /* display: flex; */
-  /* justify-content: flex-start; */
   top: 35%;
   /* left: 5%;
   right: 5%; */
-  /* font-size: 50px; */
   color: rgb(119, 119, 119);
   /* transform: translate(-25%,-25%); */
   -ms-transform: translate(-50%,-50%);

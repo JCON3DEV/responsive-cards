@@ -22,3 +22,15 @@ function off() {
   // hide.removeClass("inactive");
   // $(".hidden").classList.add("hidden");
 }
+function on2() {
+  document.getElementById("overlay-2").style.display = "block";
+}
+function off2() {
+  document.getElementById("overlay-2").style.display = "none";
+}
+function on3() {
+  document.getElementById("overlay-3").style.display = "block";
+}
+function off3() {
+  document.getElementById("overlay-3").style.display = "none";
+}
