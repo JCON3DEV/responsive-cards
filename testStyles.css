@@ -13,11 +13,15 @@
 
 .card-footer{
   border-top: none;
+  padding-bottom: 0;
   color: black;
   font-weight: 200;
 }
-.a {
+a {
+  color: darkgrey;
+  font-weight: bold;
   text-decoration: none;
+  background-color: transparent;
 }
 
 /* Offsetting and inlarging the main card images */
@@ -69,6 +73,7 @@
   z-index: 3;
   position: relative;
   bottom: 3em;
+  padding-top: 0.5rem;
   background-color: rgb(251, 249, 248);
 }
 
@@ -79,7 +84,8 @@
 .bg-active {
   /* visibility: visible; */
   opacity: 1;
-  background-color: chartreuse;
+  /* change this to make it more obvious */
+  background-color: rgb(251, 249, 248);
   z-index: 5;
 }
 
