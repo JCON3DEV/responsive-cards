@@ -56,11 +56,11 @@ a {
 
 /* Creating an overlay for the card body */
 .card-body::after {
-  content:"This is the Bio";
+  content:"";
   visibility: hidden;
   width: 100%;
   height:100%;
-  background-color: #333;
+  background-color: #f1c40f;
 
   /* testing */
   position: absolute;
@@ -76,6 +76,40 @@ a {
   padding-top: 0.5rem;
   background-color: rgb(251, 249, 248);
 }
+/* ============================== */
+#overlay,#overlay-2,#overlay-3 {
+  position: relative; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /*Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: -90%;
+  left: -1%;
+  /* right: -3%; */
+  bottom: 0;
+  background-color: rgb(251, 249, 248);
+  /*background-color: rgba(0,0,0,0.5);*/ /* Black background with opacity */
+  /*z-index: 10001;*/ /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+#text, #text-2, #text-3 {
+  position: absolute;
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  top: 35%;
+  /* left: 5%;
+  right: 5%; */
+  /* font-size: 50px; */
+  color: rgb(119, 119, 119);
+  /* transform: translate(-25%,-25%); */
+  -ms-transform: translate(-50%,-50%);
+}
+.overlay-close {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+/* =================================== */
 
 /* Creating some stylings to toggle for the overlay */
 .inactive {
@@ -90,7 +124,7 @@ a {
 }
 
 .hidden {
-  display: none;
+  /* display: none; */
 }
 
 /* Teesting new overlay */

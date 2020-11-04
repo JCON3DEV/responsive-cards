@@ -11,12 +11,14 @@ let close = document.querySelector("overlay-close");
 // })
 
 function on() {
-  funcTest.classList.add("bg-active");
-  hide.classList.add("inactive");
-  $(".hidden").removeClass("hidden");
+  document.getElementById("overlay").style.display = "block";
+  // funcTest.classList.add("bg-active");
+  // hide.classList.add("inactive");
+  // $(".hidden").removeClass("hidden");
 }
 function off() {
-  funcTest.removeClass("bg-active");
+  document.getElementById("overlay").style.display = "none";
+  // funcTest.removeClass("bg-active");
   // hide.removeClass("inactive");
   // $(".hidden").classList.add("hidden");
 }
