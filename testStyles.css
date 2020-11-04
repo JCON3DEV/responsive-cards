@@ -43,15 +43,12 @@ a {
   width: 75%;
   height:100%;
   background-color: rgb(250, 229, 39);
-
-  /* testing */
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0.7;
   z-index: -1;
   transform: rotate(10deg);
-  /* transform: matrix(1, 2, -1, 1, 80, 80); */
 }
 
 /* Creating an overlay for the card body */
@@ -61,8 +58,6 @@ a {
   width: 100%;
   height:100%;
   background-color: #f1c40f;
-
-  /* testing */
   position: absolute;
   top: 0;
   left: 0;
@@ -78,18 +73,15 @@ a {
 }
 /* ============================== */
 #overlay,#overlay-2,#overlay-3 {
-  position: relative; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /*Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
+  position: relative; 
+  display: none; 
+  width: 100%; 
+  height: 100%;
   top: -90%;
   left: -2%;
-  /* right: -3%; */
   bottom: 0;
   background-color: rgb(251, 249, 248);
-  /*background-color: rgba(0,0,0,0.5);*/ /* Black background with opacity */
-  /*z-index: 10001;*/ /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+  cursor: pointer;
 }
 /* adjustment added due to inconsistency with spacing */
 #overlay-3 {
@@ -100,8 +92,6 @@ a {
 #text, #text-2, #text-3 {
   position: absolute;
   top: 35%;
-  /* left: 5%;
-  right: 5%; */
   color: rgb(119, 119, 119);
   /* transform: translate(-25%,-25%); */
   -ms-transform: translate(-50%,-50%);
@@ -124,9 +114,3 @@ a {
   background-color: rgb(251, 249, 248);
   z-index: 5;
 }
-
-.hidden {
-  /* display: none; */
-}
-
-/* Teesting new overlay */
