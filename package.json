@@ -1,0 +1,22 @@
+{
+  "name": "responsive-cards",
+  "version": "1.0.0",
+  "description": "module for styling advert cards",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JCON3DEV/responsive-cards.git"
+  },
+  "author": "Jordan Heasman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JCON3DEV/responsive-cards/issues"
+  },
+  "homepage": "https://github.com/JCON3DEV/responsive-cards#readme",
+  "dependencies": {
+    "ejs": "^3.1.5"
+  }
+}
