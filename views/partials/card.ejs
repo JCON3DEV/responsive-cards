@@ -1,7 +1,39 @@
-<div class="card mx-5" style="max-width: 340px;">
+<% for (let advert in templateVars) { %>
+
+  <div class="card mx-5 col-xl-3" style="max-width: 340px;">
+    <!-- max width placed only for fidelity testing / should be ugraded to use columns -->
+    <div class="img-background">
+      <img class="card-img-top" src="resources/summercamp.png" alt="Card image caption" style="">
+    </div>
+
+    <div class="card-body funcTest">
+      <h3 class="card-title my-3 hide"><% advert.title %></h3>
+
+      <div class="content hide">
+        <h6 class="text-muted my-4"><%= advert.location %></h6>
+        <p class=" card-text text-muted"><%= advert.synopsis %></p>
+      </div>
+      <button class="overlay-btn btn btn-info hide mt-3" onclick="on()">Read more</button>
+
+      <!-- below is the hidden overlay -->
+      <div id="overlay">
+        <p id="text" class="extra-info hidden"> </p>
+        <button class="overlay-close btn btn-primary hidden" onclick="off()">See less</button>
+      </div>
+    </div>
+    <div class="card-footer bg-transparent text-uppercase">
+      <!-- <a href=""><small class="text-muted stretched-link">Visit Website</small></a> -->
+      <a href="">
+        <p class="stretched-link">Visit Website <i class="fas fa-external-link-alt"></i></p>
+      </a>
+    </div>
+  </div>
+<% } %>
+
+<!-- <div class="card mx-5" style="max-width: 340px;"> -->
   <!-- max width placed only for fidelity testing / should be ugraded to use columns -->
-  <div class="img-background">
-    <img class="card-img-top" src="../../resources/summercamp.png" alt="Card image cap" style="">
+  <!-- <div class="img-background">
+    <img class="card-img-top" src="../resources/summercamp.png" alt="Card image cap" style="">
 
   </div>
 
@@ -18,20 +50,20 @@
         to
         download!</p>
     </div>
-    <button class="overlay-btn btn btn-info hide mt-3" onclick="on()">Read more</button>
+    <button class="overlay-btn btn btn-info hide mt-3" onclick="on()">Read more</button> -->
 
     <!-- below is the hidden overlay -->
-    <div id="overlay">
+    <!-- <div id="overlay">
       <p id="text" class="extra-info hidden"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna
         aliqua. Ut enim ad minim veniam,</p>
       <button class="overlay-close btn btn-primary hidden" onclick="off()">See less</button>
     </div>
   </div>
-  <div class="card-footer bg-transparent text-uppercase">
+  <div class="card-footer bg-transparent text-uppercase"> -->
     <!-- <a href=""><small class="text-muted stretched-link">Visit Website</small></a> -->
-    <a href="">
+    <!-- <a href="">
       <p class="stretched-link">Visit Website <i class="fas fa-external-link-alt"></i></p>
     </a>
   </div>
-</div>
+</div> -->
